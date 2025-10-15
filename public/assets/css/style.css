@@ -1,0 +1,40 @@
+/* style.css */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9f9f9;
+}
+
+.top-header-area {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.top-header-area .main-menu a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.top-header-area .main-menu a:hover {
+    color: #0d6efd;
+}
+
+.top-header-area .dropdown-menu a {
+    color: #333;
+}
+
+.top-header-area .dropdown-menu a:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+footer {
+    background: #0d6efd !important;
+    color: #fff !important;
+}
+
+footer p {
+    margin: 0;
+}
