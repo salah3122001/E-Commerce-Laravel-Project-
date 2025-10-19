@@ -119,9 +119,9 @@ A simple yet elegant **E-Commerce web application** built using **Laravel**, fea
     screeenshots/
       
 ## ⚠️ Notes
-   -Make sure your PHP version is 8.3.16+ for Laravel 12
-   -Ensure Node.js & npm are installed for building assets
-   -Images in screenshots/ folder must match the filenames in the Markdown
+   - Make sure your PHP version is 8.3.16+ for Laravel 12
+   - Ensure Node.js & npm are installed for building assets
+   - Images in screenshots/ folder must match the filenames in the Markdown
 
 ## 🧑‍💻 Author
     Mohamed Ashraf
