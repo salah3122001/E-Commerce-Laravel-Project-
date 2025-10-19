@@ -31,8 +31,8 @@ class DatabaseSeeder extends Seeder
 
         $products = [
             ['id' => '1', 'name_en' => 'Burger', 'name_ar' => 'بورجر', 'description_en' => 'Delicious', 'description_ar' => 'لذيذ', 'imagePath' => 'assets/img/burger.jpeg', 'price' => 200, 'quantity' => 5, 'category_id' => 2],
-            ['id' => '2', 'name_en' => 'Canon', 'name_ar' => 'كاميرا كانون', 'description_en' => 'Nice Camera', 'description_ar' => 'كاميرا رئعة', 'imagePath' => 'assets/img/canon.jpeg', 'price' => 7000, 'quantity' => 11, 'category_id' => 1],
-            ['id' => '3', 'name_en' => 'Sony', 'name_ar' => 'كاميرا سوني', 'description_en' => 'Nice Pictures', 'description_ar' => 'صور رائعة', 'imagePath' => 'assets/img/sony.jpeg', 'price' => 8000, 'quantity' => 7, 'category_id' => 1],
+            ['id' => '2', 'name_en' => 'Canon camera', 'name_ar' => 'كاميرا كانون', 'description_en' => 'Nice Camera', 'description_ar' => 'كاميرا رئعة', 'imagePath' => 'assets/img/canon.jpeg', 'price' => 7000, 'quantity' => 11, 'category_id' => 1],
+            ['id' => '3', 'name_en' => 'Sony camera', 'name_ar' => 'كاميرا سوني', 'description_en' => 'Nice Pictures', 'description_ar' => 'صور رائعة', 'imagePath' => 'assets/img/sony.jpeg', 'price' => 8000, 'quantity' => 7, 'category_id' => 1],
             ['id' => '4', 'name_en' => 'Chicken', 'name_ar' => 'فراخ', 'description_en' => 'Good', 'description_ar' => 'جيدة', 'imagePath' => 'assets/img/chicken.jpeg', 'price' => 150, 'quantity' => 25, 'category_id' => 2],
             ['id' => '5', 'name_en' => 'Hand Bag', 'name_ar' => 'شنطة يد', 'description_en' => 'Easy To Carry', 'description_ar' => 'سهلة الحمل', 'imagePath' => 'assets/img/bag1.jpeg', 'price' => 700, 'quantity' => 8, 'category_id' => 4],
             ['id' => '6', 'name_en' => 'Back Bag', 'name_ar' => 'شنطة ظهر', 'description_en' => 'Light Bag', 'description_ar' => 'شنطة خفيفة', 'imagePath' => 'assets/img/bag2.jpeg', 'price' => 500, 'quantity' => 5, 'category_id' => 4],
