@@ -116,6 +116,7 @@ A simple yet elegant **E-Commerce web application** built using **Laravel**, fea
     public/
      ┣ assets/
      ┣ uploads/
+    screeenshots/
       
 ## ⚠️ Notes
    **Make sure your PHP version is 8.3.16+ for Laravel 12**
