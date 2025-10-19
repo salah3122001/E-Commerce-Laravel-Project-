@@ -1,61 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛍️ Laravel E-Commerce Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A simple yet elegant **E-Commerce web application** built using **Laravel**, featuring a multilingual interface (Arabic / English), user authentication, and a clean admin dashboard for managing products.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 👤 Authentication System
+- Register, Login, Logout  
+- Email Verification  
+- Password Reset & Forgot Password pages  
+- Fully customized UI for auth pages (Login, Register, Reset, etc.)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🌐 Multilingual Support
+- Supports **Arabic (RTL)** and **English (LTR)**  
+- Dynamic direction and text changes based on language  
+- Language switcher integrated in the layout  
 
-## Learning Laravel
+### 🛒 Products Management
+- Display all products  
+- Product details page with description, price, and images  
+- Admin can:
+  - Add new products  
+  - Edit existing products  
+  - Delete products  
+  - Upload multiple images for each product  
+- Related products section for better UX  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 💬 User Interface
+- Modern and responsive design using **Bootstrap 5**  
+- Dynamic hero section with carousel images  
+- Social media sharing buttons (Facebook, Twitter, LinkedIn, WhatsApp)  
+- Elegant color theme (Blue & Green)  
+- RTL/LTR optimized layouts  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🧠 Technologies Used
 
-## Laravel Sponsors
+| Category | Technology |
+|-----------|-------------|
+| Backend | Laravel (PHP Framework) |
+| Frontend | Blade Templates, Bootstrap 5, CSS |
+| Localization | Laravel Lang System |
+| Auth | Laravel Breeze / Auth Scaffolding |
+| Version Control | Git & GitHub |
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Installation
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/ecommerce-laravel.git
+   cd ecommerce-laravel
 
-## Contributing
+2. **Install Dependencies**
+   composer install
+   npm install
+   
+3. **Setup Environment**
+   cp .env.example .env
+   php artisan key:generate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+4. **Database Setup**  
+   1. Create a database (MySQL / MariaDB)
+   2. Update .env file with your DB credentials
+   3. Run migrations: php artisan migrate
+   4. (Optional) Seed some sample data: php artisan db:seed
+      
+5. **Build Frontend Assets**
+   npm run dev   # for development
+   npm run build # for production
 
-## Code of Conduct
+6. **Run the Server**
+   php artisan serve
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7. **Access the app**
+    Open your browser and go to:
+       👉 http://127.0.0.1:8000
+   
+   
+ ## 📸 Screenshots
+   **Login Page**  
+        ![Login Page](screenshots/login.png)
+        
+   **Product Details**  
+        ![Product Details](screenshots/product-details.png)
+        
+   **Admin Dashboard**  
+        ![Admin Dashboard](screenshots/admin-panel.png)
 
-## Security Vulnerabilities
+   **Products Actions**
+        ![Products Actions](screenshots/admin-products.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   **Create Product**
+       ![Create Products](screenshots/add-product.png)
 
-## License
+## 🧩 Folder Structure Overview
+       app/
+     ┣ Controllers/
+     ┣ Models/
+     ┣ Middleware/
+    resources/
+     ┣ views/
+     ┃ ┣ auth/           # Login, Register, Reset, etc.
+     ┃ ┣ layouts/        # Main layouts (parent, admin, auth)
+     ┃ ┗ products/       # Product views
+     ┣ lang/
+     ┃ ┣ ar/messages.php
+     ┃ ┗ en/messages.php
+    routes/
+     ┗ api.php
+     ┗ web.php
+    public/
+     ┣ assets/
+     ┣ uploads/
+      
+## ⚠️ Notes
+   **Make sure your PHP version is 8.3.16+ for Laravel 12**
+   **Ensure Node.js & npm are installed for building assets**
+   **Images in screenshots/ folder must match the filenames in the Markdown**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🧑‍💻 Author
+    Mohamed Ashraf
+    📧 Email: mohamed_ashraf4444@hotmail.com
+    🌐 GitHub: https://github.com/salah3122001
+
+   
